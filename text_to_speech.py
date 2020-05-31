@@ -6,14 +6,14 @@
 __author__ = "red_ant"
 
 # ---------------------- imports -------------------
-from tkinter import *							   #
-from tkinter import ttk 					       #
+from tkinter import *
+from tkinter import ttk
 import speech_recognition as sr
-from tkinter import messagebox					   #
-from tkinter import filedialog  				   #
-from tkinter import scrolledtext  				   #
-from playsound import playsound 				   #
-from gtts import gTTS 							   #
+from tkinter import messagebox
+from tkinter import filedialog
+from tkinter import scrolledtext
+from playsound import playsound
+from gtts import gTTS
 # --------------------------------------------------
 
 # ============================================ Window Settings ======================================================= #
@@ -86,10 +86,10 @@ def license_():
 
 # ------------ read text in english ----------------------------------------------------------------------- #
 def textEn():
-	texte = text.get('0.0', END)    							                 # Get input text
+	texte = text.get('0.0', END)# Get input text
 	tts = gTTS(text=texte, lang='en')
-	tts.save("text.mp3")             										     # save text
-	playsound("text.mp3")            									         # play sound
+	tts.save("text.mp3")# save text
+	playsound("text.mp3")# play sound
 
 # --------------------------------------------------------------------------------------------------------- #
 # -------------- read text in FRENCH ---------------------------------------------------------------------- #
@@ -114,7 +114,7 @@ def textHindi():
 
 
 def textSpan():
-	texte = text.get('0.0', END)		   									    # Get input text
+	texte = text.get('0.0', END)		  # Get input text
 	tts = gTTS(text=texte, lang='es')
 	tts.save("text.mp3")  										  			    # save text
 	playsound("text.mp3")
@@ -161,19 +161,19 @@ edit.add_command(label="Paste\t\t^v", command='')
 
 # ------------------------------ BUTTONS ---------------------------------------------------------------- #
 
-btn = ttk.Button(root, text='Play In English ', command=textEn) 			    # Play button in english
+btn = ttk.Button(root, text='Play In English ', command=textEn)# Play button in english
 btn.pack()
 btn.place(x=94, y=255)
 
-btn = ttk.Button(root, text='Play In Hindi  ', command=textHindi)  				# Play button in Hindi
+btn = ttk.Button(root, text='Play In Hindi  ', command=textHindi)# Play button in Hindi
 btn.pack()
 btn.place(x=223, y=255)
 
-btn = ttk.Button(root, text='Play In French  ', command=textFr)  				# Play button in French
+btn = ttk.Button(root, text='Play In French  ', command=textFr)# Play button in French
 btn.pack()
 btn.place(x=344, y=255)
 
-btn = ttk.Button(root, text='Play In Spanish  ', command=textSpan)  		   # Play button in Espanol
+btn = ttk.Button(root, text='Play In Spanish  ', command=textSpan)# Play button in Espanol
 btn.pack()
 btn.place(x=476, y=255)
 
