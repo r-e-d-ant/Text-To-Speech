@@ -12,3 +12,10 @@ You must have a stable internet connection.
 Requirements
 
 import tkinter
+
+# Screenshort
+---------------
+
+<br>
+<img src="https://github.com/red-Ant-02/Text-To-Speech/blob/master/Screen%20Shot.png"/>
+<br>
